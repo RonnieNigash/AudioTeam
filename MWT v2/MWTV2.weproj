@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<WebEditorProject>
+    <!---->
+    <ProjectInformation>
+        <ProjectName>MWTV2</ProjectName>
+        <ProjectVersion>1.2</ProjectVersion>
+        <ServerInfo ServerID="-1"></ServerInfo>
+        <S-DriveURL></S-DriveURL>
+    </ProjectInformation>
+    <!---->
+    <ProjectTreeFirstLevel>
+        <Node Type="2" LinkName="">./icons/</Node>
+        <Node Type="2" LinkName="">./js/</Node>
+        <Node Type="2" LinkName="">./js/images/</Node>
+        <Node Type="2" LinkName="">./themes/</Node>
+        <Node Type="5" LinkName="">./about.html</Node>
+        <Node Type="5" LinkName="">./config.xml</Node>
+        <Node Type="5" LinkName="">./donate.html</Node>
+        <Node Type="5" LinkName="">./index.html</Node>
+    </ProjectTreeFirstLevel>
+    <!---->
+    <ShowedFiles />
+    <!---->
+</WebEditorProject>
