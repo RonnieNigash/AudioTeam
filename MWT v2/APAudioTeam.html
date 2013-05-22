@@ -1,48 +1,43 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-  				    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-					       
-					    <title>Melanesian Women Today</title> 
-					    
-					    <link rel="stylesheet" href="js/jquery.mobile-1.2.0.min.css" />
-					    <link rel="stylesheet" href="themes/mwt.min.css" />
-					    
-						   <script src="js/jquery-1.8.2.min.js"></script>
-						   <script src="js/jquery.mobile-1.2.0.min.js"></script>
-						   
-					    
-					    
-					    
-    
-				</head> 
-<body> 
-
-					<!-- Start of Main Page -->
-					<div data-role="page" id="mainPage" data-theme="a">
-					
-					    <div data-role="header">
-					    
-														<!--<a href="index.html" data-icon="back" data-rel="back">Back</a>  Android NO back buttons-->							 					
-														    					
-														<div align="center"><img src="icons/banner.png" height="50" width="185"></div><!-- This heading is to take the title from the js file -->
-														
-														
-																									
-														
-									</div>
-					
-						    <div data-role="content"> 
-						      <h1>Audio functionality goes here!</h1>
-						    </div>
-					
-					    <div data-role="footer" data-position="fixed">
-					        			<h4>MWT - The Voice of Melanesian Women</h4>
-					    </div>
-					
-					    
-					</div>
-					<!-- End of Main Page -->
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Record Audio</title>
+    	<link rel="stylesheet" href="js/jquery.mobile-1.2.0.min.css" />
+    	<link rel="stylesheet" href="themes/mwt.min.css" />
+    	<script src="js/jquery-1.8.2.min.js"></script>
+    	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+    	<script>
+    		var src = "myrecording.mp3"
+    		var mediaRec = new Media(src, 
+    		function() {
+    			console.log("recordAudio():Audio Success")
+    			}, 
+    			function() {
+    				console.log("recordAudio():Audio Error: "+err.code)
+    			});
+    		}
+    	</script>
+    </head>
+<body>
+<!-- Start of Main Page -->
+	<div data-role="page" id="mainPage" data-theme="a">
+		<div data-role="header">
+<!--<a href="index.html" data-icon="back" data-rel="back">Back</a>  Android NO back buttons-->							 					
+			<div align="center"><img src="icons/banner.png" height="50" width="185"></div><!-- This heading is to take the title from the js file -->
+		</div>
+			<div data-role="content">
+				<h1>Audio functionality goes here!</h1>
+				<a href="#" data-role="button" data-inline="true" onclick="mediaRec.startRecord();">Start Recording</a>
+				<a href="#" data-role="button" data-inline="true" onclick="mediaRec.stopRecord();">Stop Recording</a>
+				<a href="#" data-role="button" data-inline="true" onclick="mediaRec.play();">Play Recording</a>
+				
+			</div>
+		<div data-role="footer" data-position="fixed">
+			<h4>MWT - The Voice of Melanesian Women</h4>
+		</div>
+	</div>
+	<!-- End of Main Page -->
 
 </body>
 </html>
