@@ -23,21 +23,29 @@
 <!-- Start of Main Page -->
 	<div data-role="page" id="mainPage" data-theme="a">
 		<div data-role="header">
-<!--<a href="index.html" data-icon="back" data-rel="back">Back</a>  Android NO back buttons-->							 					
-			<div align="center"><img src="icons/banner.png" height="50" width="185"></div><!-- This heading is to take the title from the js file -->
+		<!-- Pop Up Menu -->
+			<a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true"><img src="icons/list.png" height="20"></a>   
+			<div data-role="popup" id="popupMenu" data-theme="a">
+				<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="a">
+					<li data-role="divider" data-theme="a">Menu</li>
+					<li><a href="index.html" rel="external">Home</a></li>
+					<li><a href="about.html" rel="external">About</a></li>
+					<li><a href="APAudioTeam.html" rel="external">Record and Play Audio</a></li>
+				</ul>
+			</div> 
+			<!-- Pop Up Menu -->									 					
+			<div align="center"><img src="icons/banner.png" height="50" width="250"></div><!-- This heading is to take the title from the js file -->
 		</div>
-			<div data-role="content">
-				<h1>Audio functionality goes here!</h1>
-				<a href="#" data-role="button" data-inline="true" onclick="mediaRec.startRecord();">Start Recording</a>
-				<a href="#" data-role="button" data-inline="true" onclick="mediaRec.stopRecord();">Stop Recording</a>
-				<a href="#" data-role="button" data-inline="true" onclick="mediaRec.play();">Play Recording</a>
-				
-			</div>
+		<div data-role="content">
+			<h1>Audio functionality goes here!</h1>
+			<a href="#" data-role="button" data-inline="true" onclick="mediaRec.startRecord();">Start Recording</a>
+			<a href="#" data-role="button" data-inline="true" onclick="mediaRec.stopRecord();">Stop Recording</a>
+			<a href="#" data-role="button" data-inline="true" onclick="mediaRec.play();">Play Recording</a>
+		</div>
 		<div data-role="footer" data-position="fixed">
 			<h4>MWT - The Voice of Melanesian Women</h4>
 		</div>
 	</div>
 	<!-- End of Main Page -->
-
 </body>
 </html>

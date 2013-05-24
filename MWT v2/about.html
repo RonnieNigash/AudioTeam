@@ -1,41 +1,39 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-					    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 					       
-					    <title>Melanesian Women Today</title> 
+    	<title>Melanesian Women Today</title> 
 					    
-					    <link rel="stylesheet" href="js/jquery.mobile-1.2.0.min.css" />
-					    <link rel="stylesheet" href="themes/mwt.min.css" />
+    	<link rel="stylesheet" href="js/jquery.mobile-1.2.0.min.css" />
+    	<link rel="stylesheet" href="themes/mwt.min.css" />
 					    
-						   <script src="js/jquery-1.8.2.min.js"></script>
-						   <script src="js/jquery.mobile-1.2.0.min.js"></script>
-						   
-					    
-					    
-					    
-    
-				</head> 
-<body> 
+    	<script src="js/jquery-1.8.2.min.js"></script>
 
-					<!-- Start of Main Page -->
-					<div data-role="page" id="mainPage" data-theme="a">
-					
-					    <div data-role="header">
-					    
-														<!--<a href="index.html" data-icon="back" data-rel="back">Back</a>  Android NO back buttons-->							 					
-														    					
-														<div align="center"><img src="icons/banner.png" height="50" width="185"></div><!-- This heading is to take the title from the js file -->
-														
-														
-																									
-														
-									</div>
-					
-						    <div data-role="content"> 
-						    
-														  <h3>About MWT</h3>
-Melanesian Women Today is the VOICE of the Melanesian Women, Mothers, and Girls throughout the South Pacific Countries and the Globe.
+    	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+
+    </head> 
+	<body>
+	<!-- Start of Main Page -->
+		<div data-role="page" id="mainPage" data-theme="a">
+			<div data-role="header">
+			<!-- Pop Up Menu -->
+				<a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true"><img src="icons/list.png" height="20"></a>   
+				<div data-role="popup" id="popupMenu" data-theme="a">
+					<ul data-role="listview" data-inset="true" style="min-width:210px;" data-theme="a">
+						<li data-role="divider" data-theme="a">Menu</li>
+						<li><a href="index.html" rel="external">Home</a></li>
+						<li><a href="about.html" rel="external">About</a></li>
+						<li><a href="APAudioTeam.html" rel="external">Record and Play Audio</a></li>
+					</ul>
+				</div> 
+				<!-- Pop Up Menu -->									 					
+				<div align="center"><img src="icons/banner.png" height="50" width="250"></div><!-- This heading is to take the title from the js file -->
+			</div>
+			<div data-role="content">
+				<h3>About MWT</h3>
+
+				Melanesian Women Today is the VOICE of the Melanesian Women, Mothers, and Girls throughout the South Pacific Countries and the Globe.
 <br /> <br />
 It focuses on contemporary issues that are affecting the well-being and lifestyle of women and families in the Melanesian islands today. It addresses the effects of the global economic crisis on the livelihood of women and their children particularly on serious gender specific consequences.
 <br /> <br />
@@ -49,15 +47,12 @@ Coaching<br />
 Access to Financial resources and research<br /><br />
 Contact@melanesianwomentoday.org
 						
-						    </div>
-					
-					    <div data-role="footer" data-position="fixed">
-					        			<h4>MWT - The Voice of Melanesian Women</h4>
-					    </div>
-					
-					    
-					</div>
-					<!-- End of Main Page -->
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<h4>MWT - The Voice of Melanesian Women</h4>
+			</div>
+		</div>
+		<!-- End of Main Page -->
 
-</body>
+	</body>
 </html>
