@@ -29,12 +29,14 @@
 	<gap:splash src="icons/Default.png" width="320" height="480" />
 	<gap:splash src="icons/Default_at_2x.png" width="640" height="960" />
 	
-	<!-- Tihs is the permissions api which shows up in the this app requires when installed -->
+	<!-- This is the permissions api which shows up in the this app requires when installed -->
 	<preference name="permissions" value="none"/>
+	
 	
 	
 	<!-- to enable individual plugins use the following example -->
        <feature name="http://plugins.phonegap.com/ChildBrowser/2.0.0" /> 
+       <plugin name="Media" value="org.apache.cordova.AudioHandler" />
 
 <access origin="*" />  <!-- A wildcard - <access origin="*" /> - allows access to any external resource. -->
          
